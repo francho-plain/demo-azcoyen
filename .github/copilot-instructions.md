@@ -20,11 +20,12 @@ This is a monorepo for a task management app with:
 - **Database**: Data is persisted in `/db-data` (mounted volume).
 - **Conventional Commits**: Enforced via commitlint/husky (see root config).
 - **Tasks**: All project tasks are tracked in `/docs/TASK.md` and must be checked off and committed as completed.
+- **Terminal Usage**: Always use a clean terminal session when running commands to avoid environment issues.
 
 ## Project Conventions
 - **Monorepo**: All code (frontend, backend, infra) lives in a single repo, top-level folders.
-- **Atomic Tasks**: Each user story (US-#) is tracked in `/docs/TASK.md` and must be marked `[x]` when done.
-- **Commits**: Use [Conventional Commits](https://www.conventionalcommits.org/) for all changes.
+- **Atomic Tasks**: Each user story (US-#) is tracked in `/docs/TASK.md` and must be implemented as an atomic, independent unit of work. When a task is completed, it MUST be immediately marked as `[x]` in `/docs/TASK.md` and a commit must be made reflecting the completion of that task.
+- **Commits**: Use [Conventional Commits](https://www.conventionalcommits.org/) for all changes. Each completed task should have its own commit.
 - **Docker**: All services must be runnable via `docker-compose` for local/dev/test.
 - **Quality**: Linters and formatters (eslint/prettier for JS, black/flake8 for Python) are required.
 
