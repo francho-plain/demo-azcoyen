@@ -1,0 +1,18 @@
+- [x] US-1: Crear estructura de monorepo con carpetas /frontend y /backend, y README inicial
+- [ ] US-2: Inicializar repositorio git y configurar conventional commits (commitlint, husky)
+- [ ] US-3: Crear proyecto Django en /backend, instalar y configurar Django REST Framework
+- [ ] US-4: Crear Dockerfile para backend y configurar dependencias
+- [ ] US-5: Crear proyecto Vue 3.5+ con Vuetify en /frontend
+- [ ] US-6: Crear Dockerfile para frontend y configurar dependencias
+- [ ] US-7: Crear docker-compose.yml en la raíz para levantar backend, frontend y Postgres
+- [ ] US-8: Configurar conexión Django ↔ Postgres (variables de entorno, settings, migraciones)
+- [ ] US-9: Definir modelo Tarea en Django (título, descripción, completada, timestamps)
+- [ ] US-10: Crear y exponer API REST de tareas (listar, crear, actualizar, eliminar) usando DRF
+- [ ] US-11: Añadir tests básicos para modelo y API en Django
+- [ ] US-12: Configurar CORS en Django para exponer la API al frontend
+- [ ] US-13: Implementar servicio en Vue para consumir la API de tareas
+- [ ] US-14: Crear UI en Vue: listado de tareas, formulario de alta, checkbox de completada, botón eliminar completadas
+- [ ] US-15: Añadir validaciones y feedback de usuario en la UI
+- [ ] US-16: Añadir tests básicos en frontend (unitarios y de integración)
+- [ ] US-17: Configurar linters y formateadores en ambos proyectos (black, flake8, eslint, prettier)
+- [ ] US-18: Documentar el proceso de despliegue y uso en README
