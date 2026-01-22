@@ -1,6 +1,6 @@
 - [x] US-1: Crear estructura de monorepo con carpetas /frontend y /backend, y README inicial
 - [x] US-2: Inicializar repositorio git y configurar conventional commits (commitlint, husky)
-- [ ] US-3: Crear proyecto Django en /backend, instalar y configurar Django REST Framework
+- [x] US-3: Crear proyecto Django en /backend, instalar y configurar Django REST Framework
 - [ ] US-4: Crear Dockerfile para backend y configurar dependencias
 - [ ] US-5: Crear proyecto Vue 3.5+ con Vuetify en /frontend
 - [ ] US-6: Crear Dockerfile para frontend y configurar dependencias
