@@ -18,6 +18,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY requirements.txt .
 
 # Install Python dependencies
+# Note: --trusted-host flags are used as a workaround for SSL certificate issues in CI environments
+# For production, ensure proper SSL certificates are configured
 RUN pip install --no-cache-dir --trusted-host pypi.org --trusted-host files.pythonhosted.org -r requirements.txt
 
 # Copy project files
@@ -27,4 +29,5 @@ COPY . .
 EXPOSE 8000
 
 # Run Django development server
+# Note: This is for development only. For production, use a WSGI server like gunicorn
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
