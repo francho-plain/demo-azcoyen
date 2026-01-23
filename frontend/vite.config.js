@@ -15,4 +15,8 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
+  server: {
+    host: true, // Listen on all addresses including LAN and public IPs
+    port: 5173,
+  },
 })
