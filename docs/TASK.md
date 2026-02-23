@@ -4,7 +4,7 @@
 - [x] US-4: Crear Dockerfile para backend y configurar dependencias
 - [ ] US-5: Crear proyecto Vue 3.5+ con Vuetify en /frontend
 - [ ] US-6: Crear Dockerfile para frontend y configurar dependencias
-- [ ] US-7: Crear docker-compose.yml en la raíz para levantar backend, frontend y Postgres
+- [x] US-7: Crear docker-compose.yml en la raíz para levantar backend, frontend y Postgres
 - [ ] US-8: Configurar conexión Django ↔ Postgres (variables de entorno, settings, migraciones)
 - [ ] US-9: Definir modelo Tarea en Django (título, descripción, completada, timestamps)
 - [ ] US-10: Crear y exponer API REST de tareas (listar, crear, actualizar, eliminar) usando DRF
